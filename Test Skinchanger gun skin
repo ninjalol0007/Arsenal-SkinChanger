@@ -1,0 +1,98 @@
+local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+
+local Window = Fluent:CreateWindow({
+
+    Title = "SkinChanger V2 (Visual)" .. Fluent.Version,
+
+    TabWidth = 160, Size = UDim2.fromOffset(580, 460), Theme = "Dark"
+
+})
+
+local Tabs = {
+
+    Skin = Window:AddTab({ Title = "Skin" }),
+
+    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
+
+}
+
+Tabs.Skin:AddButton({ Title = "Creator", Callback = function()
+                 game.Players.LocalPlayer.Equipped.Value = "Creator" 
+ 
+ end })
+ 
+ 
+Tabs.Skin:AddButton({ Title = "Cube", Callback = function()
+                 game.Players.LocalPlayer.Equipped.Value = "Cube" 
+ 
+ end }) 
+ 
+Tabs.Skin:AddButton({ Title = "Froggo", Callback = function()
+                 game.Players.LocalPlayer.Equipped.Value = "Froggo" 
+ 
+ end }) 
+ 
+ Tabs.Skin:AddButton({ Title = "Binary", Callback = function()
+                 game.Players.LocalPlayer.Equipped.Value = "Binary" 
+ 
+ end })
+ 
+ Tabs.Skin:AddButton({ Title = "Dark Matter", Callback = function()
+                 game.Players.LocalPlayer.Equipped.Value = "Dark Matter" 
+ 
+ end })
+ 
+ Tabs.Skin:AddButton({ Title = "Flow", Callback = function()
+                 game.Players.LocalPlayer.Equipped.Value = "Flow" 
+ 
+ end })
+ 
+ Tabs.Skin:AddButton({ Title = "Fog", Callback = function()
+                 game.Players.LocalPlayer.Equipped.Value = "Fog" 
+ 
+ end })
+ 
+ Tabs.Skin:AddButton({ Title = "Glitter", Callback = function()
+                 game.Players.LocalPlayer.Equipped.Value = "Glitter" 
+ 
+ end })
+ 
+ Tabs.Skin:AddButton({ Title = "Run(IDK SKIN WORK)", Callback = function()
+                 game.Players.LocalPlayer.Equipped.Value = "Run" 
+ 
+ end })
+ 
+ Tabs.Skin:AddButton({ Title = "Splots", Callback = function()
+                 game.Players.LocalPlayer.Equipped.Value = "Splots" 
+ 
+ end })
+ 
+ Tabs.Skin:AddButton({ Title = "Suit", Callback = function()
+                 game.Players.LocalPlayer.Equipped.Value = "Suit" 
+ 
+ end })
+ 
+ Tabs.Skin:AddButton({ Title = "Water", Callback = function()
+                 game.Players.LocalPlayer.Equipped.Value = "Water" 
+ 
+ end })
+ 
+ Tabs.Skin:AddButton({ Title = "Galaxy", Callback = function()
+                 game.Players.LocalPlayer.Equipped.Value = "Galaxy" 
+ 
+ end })
+ 
+ Tabs.Skin:AddButton({ Title = "TRANS PRIDE", Callback = function()
+                 game.Players.LocalPlayer.Equipped.Value = "TRANS PRIDE" 
+ 
+ end })
+ 
+ Tabs.Skin:AddButton({ Title = "LGBTQIA+", Callback = function()
+                 game.Players.LocalPlayer.Equipped.Value = "LGBTQIA+" 
+ 
+ end })
+ 
+ Tabs.Skin:AddButton({ Title = "Bruh", Callback = function()
+                 game.Players.LocalPlayer.Equipped.Value = "Bruh" 
+ 
+ end })
