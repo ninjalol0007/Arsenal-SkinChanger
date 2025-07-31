@@ -12,6 +12,8 @@ local Tabs = {
 
     Skin = Window:AddTab({ Title = "Skin", Icon = "code-xml" }),
 
+    Team = Window:AddTab({ Title = "Team", Icon = "code-xml" }),
+
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 
 }
@@ -131,3 +133,28 @@ Tabs.Skin:AddButton({ Title = "Froggo", Callback = function()
                  game.Players.LocalPlayer.Equipped.Value = "Zebra" 
  
  end })
+
+Tabs.Team:AddButton({ Title = "Orange Team", Callback = fuction()
+               game.Players.LocalPlayer.Status.Team.Value = "TOC"
+end })
+
+Tabs.Team:AddButton({ Title = "Purple Team", Callback = fuction()
+               game.Players.LocalPlayer.Status.Team.Value = "TPC"
+end })
+
+Tabs.Team:AddButton({ Title = "Green Team", Callback = fuction()
+               game.Players.LocalPlayer.Status.Team.Value = "TGC"
+end })
+
+Tabs.Team:AddButton({ Title = "Yellow Team", Callback = fuction()
+               game.Players.LocalPlayer.Status.Team.Value = "TYC"
+end })
+
+
+Tabs.Team:AddButton({ Title = "Red Team", Callback = fuction()
+               game.Players.LocalPlayer.Status.Team.Value = "TRC"
+end })
+
+Tabs.Team:AddButton({ Title = "blue team", Callback = fuction()
+               game.Players.LocalPlayer.Status.Team.Value = "TBC"
+end })
