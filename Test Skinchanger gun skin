@@ -12,7 +12,7 @@ local Tabs = {
 
     Skin = Window:AddTab({ Title = "Skin", Icon = "code-xml" }),
 
-    Team = Window:AddTab({ Title = "Team", Icon = "code-xml" }),
+    Team = Window:AddTab({ Title = "Team", Icon = "alarm-clock" }),
 
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 
