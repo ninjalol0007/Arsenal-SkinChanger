@@ -10,7 +10,7 @@ local Window = Fluent:CreateWindow({
 
 local Tabs = {
 
-    Skin = Window:AddTab({ Title = "Skin" }),
+    Skin = Window:AddTab({ Title = "Skin", Icon = "code-xml" }),
 
     Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
 
@@ -94,5 +94,40 @@ Tabs.Skin:AddButton({ Title = "Froggo", Callback = function()
  
  Tabs.Skin:AddButton({ Title = "Bruh", Callback = function()
                  game.Players.LocalPlayer.Equipped.Value = "Bruh" 
+ 
+ end })
+ 
+ Tabs.Skin:AddButton({ Title = "Quandale Dingle", Callback = function()
+                 game.Players.LocalPlayer.Equipped.Value = "Quandale Dingle" 
+ 
+ end })
+ 
+  Tabs.Skin:AddButton({ Title = "Stars", Callback = function()
+                 game.Players.LocalPlayer.Equipped.Value = "Stars" 
+ 
+ end })
+ 
+  Tabs.Skin:AddButton({ Title = "Coal", Callback = function()
+                 game.Players.LocalPlayer.Equipped.Value = "Coal" 
+ 
+ end })
+ 
+  Tabs.Skin:AddButton({ Title = "Duckies", Callback = function()
+                 game.Players.LocalPlayer.Equipped.Value = "Duckies" 
+ 
+ end })
+ 
+  Tabs.Skin:AddButton({ Title = "Crow", Callback = function()
+                 game.Players.LocalPlayer.Equipped.Value = "Crow" 
+ 
+ end })
+ 
+  Tabs.Skin:AddButton({ Title = "Magma(IDK IS WORK)", Callback = function()
+                 game.Players.LocalPlayer.Equipped.Value = "Magma" 
+ 
+ end })
+ 
+  Tabs.Skin:AddButton({ Title = "Zebra", Callback = function()
+                 game.Players.LocalPlayer.Equipped.Value = "Zebra" 
  
  end })
