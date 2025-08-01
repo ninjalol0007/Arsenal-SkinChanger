@@ -18,6 +18,12 @@ local Tabs = {
 
 }
 
+Tabs.Skin:AddParagraph({
+        Title = "Warn",
+        Content = "that Skinchanger not is FE(FE = Something visible to other people) so no risk of ban"
+    })
+
+
 Tabs.Skin:AddButton({ Title = "Creator", Callback = function()
                  game.Players.LocalPlayer.Equipped.Value = "Creator" 
  
