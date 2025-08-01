@@ -134,6 +134,11 @@ Tabs.Skin:AddButton({ Title = "Froggo", Callback = function()
  
  end })
 
+Tabs.Team:AddParagraph({
+        Title = "Warned",
+        Content = "Team Color is **Visual**"
+    })
+
 Tabs.Team:AddButton({ Title = "Orange Team", Callback = function()
                game.Players.LocalPlayer.Status.Team.Value = "TOC"
 end })
@@ -155,6 +160,6 @@ Tabs.Team:AddButton({ Title = "Red Team", Callback = function()
                game.Players.LocalPlayer.Status.Team.Value = "TRC"
 end })
 
-Tabs.Team:AddButton({ Title = "blue team", Callback = function()
+Tabs.Team:AddButton({ Title = "Blue Team", Callback = function()
                game.Players.LocalPlayer.Status.Team.Value = "TBC"
 end })
