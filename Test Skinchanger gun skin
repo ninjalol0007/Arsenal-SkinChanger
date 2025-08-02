@@ -1,7 +1,6 @@
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 
-
- Title = "SkinChanger V2 (Visual)" .. Fluent.Version,
+Title = "SkinChanger V2 (Visual)" .. Fluent.Version,
 
     TabWidth = 160, Size = UDim2.fromOffset(580, 460), Theme = "Dark"
 
