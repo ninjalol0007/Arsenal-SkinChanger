@@ -1,10 +1,9 @@
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 
 local Window = Fluent:CreateWindow({
-    Title = "SkinChanger" .. Fluent.Version,
+    Title = "SkinChanger V2(Visual)" .. Fluent.Version,
     SubTitle = "Ninjalol1307"
     Theme = "Dark",
-    MinimizeKey = Enum.KeyCode.LeftControl
 })
 
 local Tabs = {
@@ -18,8 +17,8 @@ local Tabs = {
 }
 
 Tabs.Skin:AddParagraph({
-        Title = "Warn",
-        Content = "that Skinchanger not is FE(FE = Something visible to other people) so no risk of ban"
+        Title = "Warned",
+        Content = "that Skinchanger not is FE so no risk of ban"
     })
 
 
@@ -141,7 +140,7 @@ Tabs.Skin:AddButton({ Title = "Froggo", Callback = function()
 
 Tabs.Team:AddParagraph({
         Title = "Warned",
-        Content = "Team Color is **Visual**"
+        Content = "Team Color is Visual"
     })
 
 Tabs.Team:AddButton({ Title = "Orange Team", Callback = function()
