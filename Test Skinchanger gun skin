@@ -1,12 +1,13 @@
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
 
 local Window = Fluent:CreateWindow({
-
-    Title = "SkinChanger V2 (Visual)" .. Fluent.Version,
-
-    TabWidth = 160, Size = UDim2.fromOffset(580, 460), Theme = "Dark"
-MinimizeKey = Enum.KeyCode.LeftControl
-
+    Title = "Fluent " .. Fluent.Version,
+    SubTitle = "SkinChanger",
+    TabWidth = 160,
+    Size = UDim2.fromOffset(580, 460),
+    Acrylic = true,
+    Theme = "Dark",
+    MinimizeKey = Enum.KeyCode.LeftControl
 })
 
 local Tabs = {
