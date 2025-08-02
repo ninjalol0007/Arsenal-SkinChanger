@@ -2,10 +2,7 @@ local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/
 
 local Window = Fluent:CreateWindow({
     Title = "SkinChanger" .. Fluent.Version,
-    SubTitle = "Ninjalol1307",
-    TabWidth = 160,
-    Size = UDim2.fromOffset(460, 460),
-    Acrylic = true,
+    SubTitle = "Ninjalol1307"
     Theme = "Dark",
     MinimizeKey = Enum.KeyCode.LeftControl
 })
