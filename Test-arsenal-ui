@@ -1,38 +1,39 @@
 local Fluent = loadstring(game:HttpGet("https://github.com/dawid-scripts/Fluent/releases/latest/download/main.lua"))()
+local InterfaceManager = loadstring(game:HttpGet("https://raw.githubusercontent.com/dawid-scripts/Fluent/master/Addons/InterfaceManager.lua"))()
 
 local Window = Fluent:CreateWindow({
     Title = "BGSL" .. Fluent.Version,
-    SubTitle = "by Test",
+    SubTitle = "1307",
     TabWidth = 160,
     Size = UDim2.fromOffset(580, 460),
     Acrylic = true, -- The blur may be detectable, setting this to false disables blur entirely
     Theme = "Dark",
     MinimizeKey = Enum.KeyCode.LeftControl -- Used when theres no MinimizeKeybind
 })
-
 local Tabs = {
-    Bubbles = Window:AddTab({ Title = "Bubbles", Icon = "bird" }),
-    Rewards = Window:AddTab({ Title = "Rewards", Icon = "settings" })
+
+    Bubbles = Window:AddTab({ Title = "Bubbles", Icon = "code-xml" }),
+
+    Rewards = Window:AddTab({ Title = "Rewards", Icon = "alarm-clock" }),
+
+    Settings = Window:AddTab({ Title = "Settings", Icon = "settings" })
+
 }
 
-Tabs.Bubbles:AddButton({
-        Title = "Bubble Auto",
-        Description = "Very important button",
-        Callback = function()
-    getgenv().farm = true 
+Tabs.Bubbles:AddButton({ Title = "Auto Bubbles", Callback = function()
+                 getgenv().farm = true 
 while getgenv().farm do
 task.wait()
 local args = {
 	"BlowBubble"
 }
 game:GetService("ReplicatedStorage"):WaitForChild("NetworkRemoteEvent"):FireServer(unpack(args))
-end })
-
-Tabs.Rewards:AddButton({
-        Title = "1",
-        Description = "Very important button",
-        Callback = function()
-   getgenv().collect = true 
+ 
+ end })
+ 
+ 
+Tabs.Rewards:AddButton({ Title = "1", Callback = function()
+                 getgenv().collect = true 
 while getgenv().collect do
 task.wait()
 local args = {
@@ -40,14 +41,10 @@ local args = {
 	1
 }
 game:GetService("ReplicatedStorage"):WaitForChild("NetworkRemoteEvent"):FireServer(unpack(args))
-
-	end })
-
-Tabs.Rewards:AddButton({
-        Title = "2",
-        Description = "Very important button",
-        Callback = function()
-   getgenv().collect = true 
+ end }) 
+ 
+Tabs.Rewards:AddButton({ Title = "2", Callback = function()
+                 getgenv().collect = true 
 while getgenv().collect do
 task.wait()
 local args = {
@@ -55,14 +52,10 @@ local args = {
 	2
 }
 game:GetService("ReplicatedStorage"):WaitForChild("NetworkRemoteEvent"):FireServer(unpack(args))
+ end }) 
 
-	end })
-
-Tabs.Rewards:AddButton({
-        Title = "3",
-        Description = "Very important button",
-        Callback = function()
-   getgenv().collect = true 
+Tabs.Rewards:AddButton({ Title = "3", Callback = function()
+                 getgenv().collect = true 
 while getgenv().collect do
 task.wait()
 local args = {
@@ -70,14 +63,10 @@ local args = {
 	3
 }
 game:GetService("ReplicatedStorage"):WaitForChild("NetworkRemoteEvent"):FireServer(unpack(args))
+ end }) 
 
-	end })
-
-Tabs.Rewards:AddButton({
-        Title = "4",
-        Description = "Very important button",
-        Callback = function()
-   getgenv().collect = true 
+Tabs.Rewards:AddButton({ Title = "4", Callback = function()
+                 getgenv().collect = true 
 while getgenv().collect do
 task.wait()
 local args = {
@@ -85,23 +74,4 @@ local args = {
 	4
 }
 game:GetService("ReplicatedStorage"):WaitForChild("NetworkRemoteEvent"):FireServer(unpack(args))
-
-	end })
-
-local Toggle = Tabs.Bubbles:AddToggle("MyToggle", {Title = "Auto Sell", Default = false })
-
-    Toggle:OnChanged(function()
-getgenv().collect = true 
-while getgenv().collect do
-task.wait()
-local args = {
-	"Sell",
-	
-}
-game:GetService("ReplicatedStorage"):WaitForChild("NetworkRemoteEvent"):FireServer(unpack(args))
-
-end
-        print("Toggle changed:", Options.MyToggle.Value)
-    end)
-
-    Options.MyToggle:SetValue(false)
+ end }) 
