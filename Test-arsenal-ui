@@ -27,7 +27,10 @@ local Tabs = {
    task.wait()
  local args = {
 	"BlowBubble"
-} })
+
+
+game:GetService("ReplicatedStorage"):WaitForChild("NetworkRemoteEvent"):FireServer(unpack(args))
+end })
 
     Tabs.Rw:AddButton({
         Title = "1",
